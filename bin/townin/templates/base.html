@@ -1,0 +1,52 @@
+<html lang="ko">
+<head>
+  <title>{% block title %}Townin Web Trading System{% endblock %}</title>
+
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% css/base.css %}" />
+  <link rel="stylesheet" type="text/css" href="{% block extrastyle %}{% endblock %}" />
+
+</head>
+
+<body>
+  <div id="header">
+    <h2 class="maintitle">Townin Web Trading System</h2>
+    <h4 class="Welcome">Welcome,<a href="#">ssKang</a> /
+      <a href="#"> Change Password</a> /
+      <a href="#"> Logout </a>
+    </h4>
+  </div>
+
+  <div id="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">KOSPI</a></li>
+    <li><a href="#">KOSTACK</a></li>
+    <li><a href="#">Etc</a></li>
+
+    <li><a href="#">Add&bigtriangledown;</a>
+      <ul>
+        <li><a href="#">Bookmark</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Photo</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">Change&bigtriangledown;</a>
+      <ul>
+        <li><a href="#">Bookmark</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Photo</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">Archive</a></li>
+    <li><a href="#">Serch</a></li>
+    <li><a href="#">Admin</a></li>
+</div>
+
+{% block content %}{%  endblock %}
+
+{% block footer%}{% endblock %}
+
+</body>
+</html>
